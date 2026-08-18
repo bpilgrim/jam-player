@@ -5,3 +5,11 @@ Thumbs.db
 # Editors
 *.tmp
 *~
+.vs/
+.idea/
+
+# .NET build output
+bin/
+obj/
+*.user
+TestResults/

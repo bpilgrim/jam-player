@@ -1,0 +1,20 @@
+# Keep C# as the repository's detected language.
+#
+# Linguist ignores Markdown (prose), so without committed code this repo shows no
+# language at all. These rules make sure the sample code is what gets counted.
+
+*.cs linguist-detectable=true
+
+# XAML is detected as XML and would otherwise outrank the C# it accompanies.
+*.xaml linguist-detectable=false
+
+# Project scaffolding is not a language sample.
+*.csproj linguist-detectable=false
+*.sln linguist-detectable=false
+*.slnx linguist-detectable=false
+*.props linguist-detectable=false
+*.targets linguist-detectable=false
+
+# Normalize line endings for source.
+* text=auto
+*.cs text diff=csharp

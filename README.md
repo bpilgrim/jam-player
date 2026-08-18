@@ -42,6 +42,13 @@ A modular Windows desktop application built with deliberate separation of concer
 
 This repository is the product's public home. jam-player is a commercial product in development. The application source is not open source.
 
+### Code sample: [tag filter expressions](samples/TagFilterExpression/)
+
+The filtering engine is extracted here as a standalone, tested slice — the part that
+turns a row of tag chips (`+Italian +German xBlue -Fiat`) into the set of assets the
+browse grid shows. Decoupled from WPF, Prism, and EF Core, with 25 tests and notes on
+why evaluation is phased rather than parsed.
+
 ---
 
 ## Status

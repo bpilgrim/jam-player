@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="JamPlayer.TagFilter.Tests/JamPlayer.TagFilter.Tests.csproj" />
+  <Project Path="JamPlayer.TagFilter/JamPlayer.TagFilter.csproj" />
+</Solution>
