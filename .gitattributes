@@ -3,6 +3,13 @@
 # Linguist ignores Markdown (prose), so without committed code this repo shows no
 # language at all. These rules make sure the sample code is what gets counted.
 
+# Linguist classifies everything under a `samples/` directory as documentation
+# (documentation.yml matches `^[Ss]amples?/`), and documentation is excluded from
+# language stats before the linguist-detectable attribute is even consulted. Without
+# this override the C# below is present but uncounted, and the repo reports no
+# language at all.
+samples/** linguist-documentation=false
+
 *.cs linguist-detectable=true
 
 # XAML is detected as XML and would otherwise outrank the C# it accompanies.
